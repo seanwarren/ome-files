@@ -1,28 +1,28 @@
 [submodule "ome-common"]
 	path = ome-common
-	url = https://github.com/ome/ome-common-cpp.git
+	url = ../ome-common-cpp.git
 	branch = master
 [submodule "ome-model"]
 	path = ome-model
-	url = https://github.com/ome/ome-model.git
+	url = ../ome-model.git
 	branch = master
 [submodule "ome-files"]
 	path = ome-files
-	url = https://github.com/ome/ome-files-cpp.git
+	url = ../ome-files-cpp.git
 	branch = master
 [submodule "ome-qtwidgets"]
 	path = ome-qtwidgets
-	url = https://github.com/ome/ome-qtwidgets.git
+	url = ../ome-qtwidgets.git
 	branch = master
 [submodule "ome-files-py"]
 	path = ome-files-py
-	url = https://github.com/ome/ome-files-py.git
+	url = ../ome-files-py.git
 	branch = master
 [submodule "ome-files-performance"]
 	path = ome-files-performance
-	url = https://github.com/openmicroscopy/ome-files-performance.git
+	url = ../ome-files-performance.git
 	branch = master
 [submodule "superbuild"]
 	path = superbuild
-	url = https://github.com/ome/ome-cmake-superbuild
+	url = ../ome-cmake-superbuild
 	branch = master
