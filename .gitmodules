@@ -22,7 +22,3 @@
 	path = ome-files-performance
 	url = ../ome-files-performance.git
 	branch = master
-[submodule "superbuild"]
-	path = superbuild
-	url = ../ome-cmake-superbuild
-	branch = master
