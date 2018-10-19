@@ -34,7 +34,7 @@
 # policies, either expressed or implied, of any organization.
 # #L%
 
-cmake_minimum_required(VERSION 3.2.0)
+cmake_minimum_required(VERSION 3.8.0)
 
 # Default policy is from 3.4.0
 cmake_policy(VERSION 3.4.0)
@@ -43,19 +43,11 @@ project(ome-files-build
   VERSION 0.1.0
   LANGUAGES CXX)
 
-macro(add_component name)
-  if (NOT "${name}-dir")
-    set("${name}-dir" "${PROJECT_SOURCE_DIR}/${name}" CACHE FILEPATH "Location of ${name} component")
-  endif()
-endmacro()
+enable_testing()
 
-add_component(ome-common)
-add_component(ome-model)
-add_component(ome-files)
-add_component(ome-files-py)
-add_component(ome-qtwidgets)
-add_component(ome-files-performance)
-add_component(gtest)
-
-add_subdirectory(superbuild)
-
+add_subdirectory(ome-common)
+add_subdirectory(ome-model)
+add_subdirectory(ome-files)
+#add_subdirectory(ome-files-py)
+add_subdirectory(ome-qtwidgets)
+add_subdirectory(ome-files-performance)
