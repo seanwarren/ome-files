@@ -10,10 +10,6 @@
 	path = ome-files
 	url = ../ome-files-cpp.git
 	branch = master
-[submodule "ome-qtwidgets"]
-	path = ome-qtwidgets
-	url = ../ome-qtwidgets.git
-	branch = master
 [submodule "ome-files-py"]
 	path = ome-files-py
 	url = ../ome-files-py.git
@@ -21,4 +17,8 @@
 [submodule "ome-files-performance"]
 	path = ome-files-performance
 	url = ../ome-files-performance.git
+	branch = master
+[submodule "ome-files-view"]
+	path = ome-files-view
+	url = ../ome-files-view.git
 	branch = master
