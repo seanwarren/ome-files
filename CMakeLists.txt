@@ -43,11 +43,25 @@ project(ome-files-build
   VERSION 0.1.0
   LANGUAGES CXX)
 
-enable_testing()
+option(OME_FILES_ENABLE_TESTS "Enable testing" ON)
+option(OME_FILES_BUILD_PYTHON "Build ome-files-python" ON)
+option(OME_FILES_BUILD_VIEW "Build ome-files-view" ON)
+option(OME_FILES_BUILD_PERFORMANCE "Build ome-files-performance" ON)
+
+if (${OME_FILES_ENABLE_TESTS})
+  enable_testing()
+endif ()
 
 add_subdirectory(ome-common)
 add_subdirectory(ome-model)
 add_subdirectory(ome-files)
-#add_subdirectory(ome-files-py)
-add_subdirectory(ome-files-view)
-add_subdirectory(ome-files-performance)
+
+if (${OME_FILES_BUILD_PYTHON})
+  add_subdirectory(ome-files-py)
+endif ()
+if (${OME_FILES_BUILD_VIEW})
+  add_subdirectory(ome-files-view)
+endif ()
+if (${OME_FILES_BUILD_PERFORMANCE})
+  add_subdirectory(ome-files-performance)
+endif ()
